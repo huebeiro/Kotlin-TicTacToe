@@ -22,6 +22,7 @@
             android:rowCount="3">
 
             <Button
+                android:id="@+id/button00"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(0,0)}"
                 android:text='@{viewModel.cells["00"]}' />
