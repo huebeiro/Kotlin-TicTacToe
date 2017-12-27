@@ -28,41 +28,49 @@
                 android:text='@{viewModel.cells["00"]}' />
 
             <Button
+                android:id="@+id/button01"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(0,1)}"
                 android:text='@{viewModel.cells["01"]}' />
 
             <Button
+                android:id="@+id/button02"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(0,2)}"
                 android:text='@{viewModel.cells["02"]}' />
 
             <Button
+                android:id="@+id/button10"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(1,0)}"
                 android:text='@{viewModel.cells["10"]}' />
 
             <Button
+                android:id="@+id/button11"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(1,1)}"
                 android:text='@{viewModel.cells["11"]}' />
 
             <Button
+                android:id="@+id/button12"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(1,2)}"
                 android:text='@{viewModel.cells["12"]}' />
 
             <Button
+                android:id="@+id/button20"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(2,0)}"
                 android:text='@{viewModel.cells["20"]}' />
 
             <Button
+                android:id="@+id/button21"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(2,1)}"
                 android:text='@{viewModel.cells["21"]}' />
 
             <Button
+                android:id="@+id/button22"
                 style="@style/tictactoebutton"
                 android:onClick="@{() -> viewModel.onClickedCellAt(2,2)}"
                 android:text='@{viewModel.cells["22"]}' />
