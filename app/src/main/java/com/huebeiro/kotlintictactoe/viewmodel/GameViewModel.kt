@@ -21,9 +21,15 @@ class GameViewModel : ViewModel {
     }
 
     fun onClickedCellAt(row: Int, col: Int) {
+        //Retrieves the current player
         val playerThatMoved = model.mark(row, col)
-        cells.put("" + row + col, playerThatMoved?.toString())
-        winner.set(if (model.winner == null) null else model.winner.toString())
+
+        //If it is not a valid move the returned player will be null
+        if(playerThatMoved != null) {
+            val cellName : String = "" + row + col
+            cells.put(cellName, playerThatMoved.toString())
+            winner.set(if (model.winner == null) null else model.winner.toString())
+        }
     }
 
     override fun onCreate() {
